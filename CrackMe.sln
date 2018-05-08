@@ -5,6 +5,8 @@ VisualStudioVersion = 15.0.27004.2006
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CrackMe", "CrackMe\CrackMe.csproj", "{74FC4BE9-20EC-425C-BAED-E5BD6487D49E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Crypt", "Crypt\Crypt.csproj", "{365EA213-BD55-45C7-9545-3A1C267C415D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{74FC4BE9-20EC-425C-BAED-E5BD6487D49E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{74FC4BE9-20EC-425C-BAED-E5BD6487D49E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{74FC4BE9-20EC-425C-BAED-E5BD6487D49E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{365EA213-BD55-45C7-9545-3A1C267C415D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{365EA213-BD55-45C7-9545-3A1C267C415D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{365EA213-BD55-45C7-9545-3A1C267C415D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{365EA213-BD55-45C7-9545-3A1C267C415D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

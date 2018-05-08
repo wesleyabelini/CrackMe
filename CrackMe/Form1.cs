@@ -10,11 +10,17 @@ using System.Windows.Forms;
 
 namespace CrackMe
 {
-    public partial class Form1 : Form
+    public partial class FCrackMe : Form
     {
-        public Form1()
+        public FCrackMe()
         {
             InitializeComponent();
+            CreateUsers createUsers = new CreateUsers();
+        }
+
+        private void btLogin_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
