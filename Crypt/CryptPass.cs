@@ -11,17 +11,40 @@ namespace Crypt
     {
         public static string Md5Crypt(string pass)
         {
-            return "";
+            MD5 md5 = new MD5CryptoServiceProvider();
+            md5.ComputeHash(Encoding.UTF8.GetBytes(pass));
+
+            byte[] hash = md5.Hash;
+            var sb = new StringBuilder(hash.Length * 2);
+
+            foreach(var i in hash)
+            {
+                sb.Append(i.ToString("X2"));
+            }
+
+            return sb.ToString();
         }
 
         public static string Sha1Crypt(string pass)
         {
-            return "";
+            using(SHA1Managed sha1 = new SHA1Managed())
+            {
+                var hash = sha1.ComputeHash(Encoding.UTF8.GetBytes(pass));
+                var sb = new  StringBuilder(hash.Length * 2);
+
+                foreach(var i in hash)
+                {
+                    sb.Append(i.ToString("X2"));
+                }
+
+                return sb.ToString();
+            }
         }
 
         public static string Base64Crypt(string pass)
         {
-            return "";
+            byte[] base64 = Encoding.UTF8.GetBytes(pass);
+            return Convert.ToBase64String(base64);
         }
     }
 }
